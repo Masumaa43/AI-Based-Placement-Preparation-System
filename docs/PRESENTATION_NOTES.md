@@ -1,6 +1,6 @@
-# PrepPulse AI — Major Project Presentation Speaker Notes
+# PrepPulse AI — Major Project Presentation 
 
-These speaker notes accompany the 10 slides in **`PPT.pdf`** and **`PPT.pptx`** for your Major Project defense or viva presentation.
+These  accompany the 10 slides in **`PPT.pdf`** and **`PPT.pptx`** for your Major Project or viva presentation.
 
 ---
 
