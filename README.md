@@ -245,5 +245,5 @@ PrepPulse AI is engineered with zero-leak configuration abstraction:
   2. **Ayushi Sharma**
   3. **Neehit Kumar**
 - **Degree**: Bachelor of Technology (B.Tech) in Computer Science & Engineering
-- **Academic Year**: 2025–2026
+- **Academic Year**: 2024-2028
 - **License**: Released under the [MIT License](https://opensource.org/licenses/MIT). Free for educational and research usage.
