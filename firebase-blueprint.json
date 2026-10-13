@@ -1,0 +1,95 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile authenticated via Firebase and Google Sign-in",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The Firebase Auth user ID" },
+        "displayName": { "type": "string", "description": "User full name" },
+        "email": { "type": "string", "description": "User email address" },
+        "photoURL": { "type": "string", "description": "User avatar photo URL" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of account creation" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last update" }
+      },
+      "required": ["uid", "displayName"]
+    },
+    "UserStudyData": {
+      "title": "UserStudyData",
+      "description": "User study progress, garden trees, streak stats and topic records",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Owner user ID" },
+        "currentStreak": { "type": "number", "description": "Active study streak in days" },
+        "longestStreak": { "type": "number", "description": "Record streak in days" },
+        "lastActiveDate": { "type": "string", "description": "Last active study date YYYY-MM-DD" },
+        "totalStudyMinutes": { "type": "number", "description": "Total minutes studied" },
+        "totalQuestionsAnswered": { "type": "number", "description": "Total quiz questions answered" },
+        "gardenLevel": { "type": "number", "description": "Forest level" },
+        "fertilizerCharges": { "type": "number", "description": "Available fertilizer boosters" },
+        "streakFreezes": { "type": "number", "description": "Available streak freeze passes" },
+        "topicProgressJson": { "type": "string", "description": "Serialized topic progress state" },
+        "treesJson": { "type": "string", "description": "Serialized planted trees array" },
+        "updatedAt": { "type": "string", "description": "Last update ISO timestamp" }
+      },
+      "required": ["uid"]
+    },
+    "GeneratedVideo": {
+      "title": "GeneratedVideo",
+      "description": "Metadata for videos generated using Veo 3",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique video ID" },
+        "uid": { "type": "string", "description": "Owner user ID" },
+        "prompt": { "type": "string", "description": "Prompt used for video generation" },
+        "aspectRatio": { "type": "string", "description": "Aspect ratio 16:9 or 9:16" },
+        "operationName": { "type": "string", "description": "Veo operation name" },
+        "status": { "type": "string", "description": "Status: pending, completed, failed" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      },
+      "required": ["id", "uid", "prompt", "aspectRatio"]
+    },
+    "MockInterviewSession": {
+      "title": "MockInterviewSession",
+      "description": "Voice mock screening interview session log and evaluation report",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Session unique identifier" },
+        "userId": { "type": "string", "description": "Firebase Auth User ID" },
+        "timestamp": { "type": "string", "description": "ISO timestamp of the interview session" },
+        "formattedDate": { "type": "string", "description": "Human-readable session date" },
+        "subjectId": { "type": "string", "description": "Subject key: dbms, os, cn, oops, dsa, system_design" },
+        "subjectTitle": { "type": "string", "description": "Full title of technical subject" },
+        "difficulty": { "type": "string", "description": "Difficulty: Entry-Level, Mid-Level, Senior" },
+        "interviewerPersona": { "type": "string", "description": "AI Interviewer persona" },
+        "totalRounds": { "type": "number", "description": "Configured number of rounds" },
+        "completedRounds": { "type": "number", "description": "Rounds evaluated" },
+        "averageScore": { "type": "number", "description": "Aggregate score 0-100" },
+        "verdict": { "type": "string", "description": "Screening recommendation verdict" },
+        "transcriptSummary": { "type": "string", "description": "High-level summary of candidate response" },
+        "strengthsSummary": { "type": "array", "description": "List of observed technical strengths", "items": { "type": "string" } },
+        "growthAreas": { "type": "array", "description": "Key areas for improvement", "items": { "type": "string" } },
+        "roundsJson": { "type": "string", "description": "Serialized rounds with questions, transcripts, scores, feedback" }
+      },
+      "required": ["id", "subjectId", "averageScore"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile document storing basic user details"
+    },
+    "/users/{userId}/data/study": {
+      "schema": "UserStudyData",
+      "description": "User private study metrics, garden state, and topic progress"
+    },
+    "/users/{userId}/videos/{videoId}": {
+      "schema": "GeneratedVideo",
+      "description": "Veo generated videos requested by the user"
+    },
+    "/users/{userId}/interviews/{interviewId}": {
+      "schema": "MockInterviewSession",
+      "description": "Voice mock interview session logs and scores"
+    }
+  }
+}

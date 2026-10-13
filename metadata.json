@@ -1,0 +1,10 @@
+{
+  "name": "Remix PrepPulse AI - Tech Interview Mastery \u0026 Mindset Hub",
+  "description": "Comprehensive tech placement platform covering Data Structures, Machine Learning & AI, Core CS (DBMS, OS, CN), Web Development, and OOPs with Google Search Grounding, LeetCode profile tracking, voice mock interviews, and Firebase sync.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

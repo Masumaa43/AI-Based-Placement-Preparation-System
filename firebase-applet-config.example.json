@@ -1,0 +1,12 @@
+{
+  "projectId": "YOUR_PROJECT_ID",
+  "appId": "YOUR_APP_ID",
+  "apiKey": "YOUR_FIREBASE_API_KEY",
+  "authDomain": "YOUR_PROJECT_ID.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-remixpreppulseai",
+  "storageBucket": "YOUR_PROJECT_ID.firebasestorage.app",
+  "messagingSenderId": "YOUR_MESSAGING_SENDER_ID",
+  "measurementId": "",
+  "oAuthClientId": "",
+  "recaptchaSiteKey": ""
+}
