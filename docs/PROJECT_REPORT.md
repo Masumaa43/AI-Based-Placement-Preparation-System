@@ -9,11 +9,11 @@
 ### **IN COMPUTER SCIENCE AND ENGINEERING**
 
 **Submitted by (Project Group Members):**
-1. **Masuma Akhtar** (Roll No: 2022-CSE-0842)
-2. **Ayushi Sharma** (Roll No: 2022-CSE-0843)
-3. **Neehit Kumar** (Roll No: 2022-CSE-0844)
+1. **Masuma Akhtar** (ERP : 6605879)
+2. **Ayushi Sharma** (ERP : 6605806)
+3. **Neehit Kumar** (ERP : 6605758)
 
-- **Academic Session:** 2025 – 2026
+- **Academic Session:** 2024 - 2028
 - **Degree:** Bachelor of Technology (B.Tech) in Computer Science & Engineering
 
 **Under the Guidance of:**
