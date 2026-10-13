@@ -7,7 +7,7 @@ This manual provides a quick-start walkthrough for students, interview candidate
 ## 1. Quick Start Guide
 
 ### Step 1: Open the Application
-Navigate to the hosted URL or run locally on `http://localhost:3000`.
+Navigate to the hosted URL or run locally on `http://localhost:3000`
 
 ### Step 2: Sign In / Profile Initialization
 - Click the **Sign In** button in the top navigation bar to authenticate with Google or anonymous guest access.
