@@ -8,7 +8,7 @@
 [![Firebase Firestore](https://img.shields.io/badge/Firebase-Firestore_%26_Auth-ffca28.svg?style=flat&logo=firebase)](https://firebase.google.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-> **PrepPulse AI** is an integrated placement intelligence and mock interview platform developed as a final-year university Major Project. It bridges the gap between academic theory and high-stakes tech hiring through real-time voice mock interviews powered by Google Gemini AI, comprehensive Core Computer Science curricula (OS, DBMS, CN, OOP), live LeetCode progress tracking, and secure Cloud Firestore synchronization.
+> **PrepPulse AI** is an integrated placement intelligence and mock interview platform developed as a pre final-year university Major Project. It bridges the gap between academic theory and high-stakes tech hiring through real-time voice mock interviews powered by Google Gemini AI, comprehensive Core Computer Science curricula (OS, DBMS, CN, OOP), live LeetCode progress tracking, and secure Cloud Firestore synchronization.
 
 ---
 
